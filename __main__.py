@@ -1,3 +1,11 @@
+"""
+1. Connect to preexisting server
+2. Request server data (inc. id)
+   Request room association data
+3. Introduce self to servers
+4. Handle connecting clients
+"""
+
 from sys import argv, exit
 
 CONNECTED_CLIENTS = dict()
@@ -10,11 +18,3 @@ def main(args: list[str]):
 
 if __name__ == "__main__":
     exit(main(argv[1:]))
-
-"""
-1. Connect to preexisting server
-2. Request server data (inc. id)
-   Request room association data
-3. Introduce self to servers
-4. Handle connecting clients
-"""
